@@ -62,7 +62,7 @@ https://github.com/user-attachments/assets/0a812b5c-b9f2-410c-82b9-daa323b7fc69
 ## Important Notes
 
 * **State Persistence**: Ensure that your state structure is consistent to avoid issues with state loading and saving.
-* **Shape Of JSON**: The shape of JSON data in applicatiob will be like ```{"count":17,"nested":{"deep":{"value":24}}}```
+* **Shape Of JSON**: The shape of JSON data in application will be like ```{"count":17,"nested":{"deep":{"value":24}}}```
 * **Import & Export**: You can export JSON file contain current data by click on Export button, also you can import JSON file by click on input and you will notice that state of application changed by the value contained in JSON file you imported.
 
 ## Contributing
