@@ -1,0 +1,100 @@
+/* Overall UI Styles */
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px 20px;
+}
+
+/* Button Styles */
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:active {
+  background-color: #00408d;
+}
+
+/* Input Styles */
+.input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* State Display Styles */
+.state-container {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.state-label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
