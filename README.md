@@ -1,50 +1,70 @@
-# React + TypeScript + Vite
+# State Management Toolkit for React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--_N4G6Upo--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_800/https://i.imgur.com/riadAin.gif" />
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository provides a powerful state management toolkit for React applications, featuring advanced capabilities such as logger middleware, state persistence, and more. It is designed to outline the main concepts of state management libraries.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* **State Sync**: Synchronize the state across all components subscribed for it.
+* **State Persistence**: Save and load state from `localStorage` to persist across sessions.
+* **State Import/Export**: Import and export application state using JSON files for easy state management.
+* **Immer Middleware**: Use Immer for immutable state updates.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone the repository:
+    
+    ```bash
+    git clone https://github.com/Shaban-Eissa/state-management-toolbox
+    ```
+    
+2. Navigate to the project directory:
+    
+    ```bash
+    cd state-management-toolbox
+    ```
+    
+3. Install dependencies:
+    
+    ```bash
+    npm install
+    ```
+    
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Setup
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Integrate the Store**: Use the `useStore` hook in your components to access and update state.
+    
+2. **Configure State Persistence**: Ensure `localStorage` is set up for persistence and configure your `persistenceMiddleware`.
+    
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## How to Start
+
+1. Start the development server:
+    
+    ```bash
+    npm run dev
+    ```
+    
+2. Open your browser and navigate to `http://localhost:5173` to view the application.
+    
+
+## Video Demo
+
+Watch the video demo to see the toolkit in action
+
+https://github.com/user-attachments/assets/0a812b5c-b9f2-410c-82b9-daa323b7fc69
+
+
+## Important Notes
+
+* **State Persistence**: Ensure that your state structure is consistent to avoid issues with state loading and saving.
+* **Shape Of JSON**: The shape of JSON data in applicatiob will be like ```{"count":17,"nested":{"deep":{"value":24}}}```
+* **Import & Export**: You can export JSON file contain current data by click on Export button, also you can import JSON file by click on input and you will notice that state of application changed by the value contained in JSON file you imported.
+
+## Contributing
+
+Feel free to submit issues or pull requests.
